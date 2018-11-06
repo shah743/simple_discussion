@@ -1,4 +1,4 @@
-class CreateForumSubscriptions < ActiveRecord::Migration[4.2]
+class CreateForumSubscriptions < ActiveRecord::Migration
   def change
     create_table :forum_subscriptions, force: :cascade do |t|
       t.references :forum_thread, foreign_key: true

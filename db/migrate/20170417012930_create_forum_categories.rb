@@ -1,4 +1,4 @@
-class CreateForumCategories < ActiveRecord::Migration[4.2]
+class CreateForumCategories < ActiveRecord::Migration
   def change
     create_table :forum_categories, force: :cascade do |t|
       t.string   :name, null: false

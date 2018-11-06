@@ -1,4 +1,4 @@
-class SimpleDiscussion::ForumPostNotificationJob < ApplicationJob
+class SimpleDiscussion::ForumPostNotificationJob < ActiveJob::Base
   include SimpleDiscussion::Engine.routes.url_helpers
 
   def perform(forum_post)

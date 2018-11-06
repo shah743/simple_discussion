@@ -1,4 +1,4 @@
-class ForumCategory < ApplicationRecord
+class ForumCategory < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
 

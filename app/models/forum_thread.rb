@@ -1,4 +1,4 @@
-class ForumThread < ApplicationRecord
+class ForumThread < ActiveRecord::Base
   extend FriendlyId
   friendly_id :title, use: :slugged
 

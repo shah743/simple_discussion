@@ -1,4 +1,4 @@
-class SimpleDiscussion::ForumThreadNotificationJob < ApplicationJob
+class SimpleDiscussion::ForumThreadNotificationJob < ActiveJob::Base
   include SimpleDiscussion::Engine.routes.url_helpers
 
   def perform(forum_thread)

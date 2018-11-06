@@ -25,8 +25,8 @@ bundle
 Install the migrations and migrate:
 
 ```bash
-rails simple_discussion:install:migrations
-rails db:migrate
+rake simple_discussion:install:migrations
+rake db:migrate
 ```
 
 Add SimpleDiscussion to your `User` model. The model **must** have `name` method which will be used to display the user's name on the forum. Currently only a model named `User` will work, but this will be fixed shortly.
@@ -45,7 +45,7 @@ Optionally, you can add a `moderator` flag to the `User` model to allow users to
 
 ```bash
 rails g migration AddModeratorToUsers moderator:boolean
-rails db:migrate
+rake db:migrate
 ```
 
 Add the following line to your `config/routes.rb` file:

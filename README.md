@@ -1,3 +1,5 @@
+# Rails 4 Supported
+
 # SimpleDiscussion
 
 SimpleDiscussion is a Rails forum gem extracting the [forum from GoRails](https://gorails.com/forum). It includes categories, simple moderation, the ability to mark threads as solved, and more.
@@ -13,7 +15,7 @@ Before you get started, SimpleDiscussion requires a `User` model in your applica
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'simple_discussion'
+gem 'simple_discussion', git: 'git@gitlab.com:shah743/simple_discussion'
 ```
 
 And then execute:

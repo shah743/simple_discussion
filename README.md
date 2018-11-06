@@ -15,7 +15,7 @@ Before you get started, SimpleDiscussion requires a `User` model in your applica
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'simple_discussion', git: 'git@gitlab.com:shah743/simple_discussion'
+gem 'simple_discussion', git: 'git@github.com:shah743/simple_discussion'
 ```
 
 And then execute:
